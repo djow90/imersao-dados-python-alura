@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # --- Carregamento dos dados ---
-df = pd.read_csv("https://github.com/djow90/imersao-dados-python-alura/blob/f2bf052c5489484a1fce64a6fa8ad7af32929cf5/dados_imersao_final.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv")
 #df = pd.read_csv("./dados_imersao-final.csv")
 # --- Barra Lateral (Filtros) ---
 st.sidebar.header("🔍 Filtros")
@@ -136,6 +136,7 @@ with col_graf4:
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
 st.dataframe(df_filtrado)
+
 
 
 
